@@ -4,9 +4,10 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.media.audiofx.Visualizer;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Switch;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.hjq.permissions.OnPermission;
 import com.hjq.permissions.XXPermissions;
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.switch_diffusion).setOnClickListener(this);
         findViewById(R.id.switch_wave).setOnClickListener(this);
 
-        player = MediaPlayer.create(MainActivity.this, R.raw.demo_1);
+        player = MediaPlayer.create(MainActivity.this, R.raw.hdgq);
         player.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mp) {
